@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            label {
+                display: inline-block;
+                text-align: right;
+                width: 180px;
+                padding-right: 10px;
+            }
+            textarea {
+                display: inline-block;
+                vertical-align: top;
+                width: 180px;
+            }
+            #btn-submit {
+                margin-left: 255px;
+            }
+            #first-name, #last-name, #email {
+                width: 186px;
+            }
+            select {
+                width: 186px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>
+                <label id="first-name-label" for="first-name">First Name: </label>
+                <input id="first-name" name="first-name" type="text"/>
+            </div>
+            <br/>
+            <div>
+                <label id="last-name-label" for="last-name">Last Name: </label>
+                <input id="last-name" name="last-name" type="text"/>
+            </div>
+            <br/>
+            <div>
+                <label id="email-label" for="email">Email: </label>
+                <input id="email" name="email" type="text"/>
+            </div>
+            <br/>
+            <div>
+                <label id="license-label" for="license">Type of License:</label>
+                <input name="license-type" value="business" type="radio" checked/>Business
+                <input name="license-type" value="personal" type="radio"/>Personal
+            </div>
+            <br/>
+            <div>
+                <label id="reason-label" for="reason">Reason: </label>
+                <select name="reason">
+                    <option value="Select a Reason">Select a Reason</option>
+                    <option value="Software Support">Software Support</option>
+                    <option value="Hardware Support">Hardware Support</option>
+                    <option value="Information Request">Information Request</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label id="add-info-label" for="additional-info">Additional Information:</label>
+                <textarea id="additional-info" name="additional-info" rows="7"></textarea>
+            </div>
+            <br/>
+            <div>
+                <input id="btn-submit" type="submit" value="Send Request"/>
+            </div>
+        </form>
+
+    </body>
+</html>
