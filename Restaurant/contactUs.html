@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <style>
+            * {
+               margin: 10px 10px;
+            }
+            h1, h2, p {
+               text-align: center;
+            }
+            label {
+               display: inline-block;
+               text-align: right;
+               width: 45%;
+               padding-right: 10px;
+            }
+            #btn-submit {
+                margin-left: 55%;
+            }
+            #name, #email, #phone {
+               width: 186px;
+            }
+            select {
+               width: 190px;
+            }
+            #contactus {
+                margin-top: 50px;
+                
+            }
+            </style>
+    </head>
+    <body>
+        <!-- Page Title -->
+        <div id="page-title">
+            <h1>Burger Time</h1>
+        <div>
+        <hr/>
+        
+        <!-- Navigation -->
+        <div id=navigation>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+        <hr/>
+
+        <!-- Form -->
+        <form id="contactus" action="#" method="post">
+                
+            <div>
+                <label id="name-label" for="name">Name: </label>
+                <input id="name" name="name" type="text"/>
+            </div>
+                
+            <div>
+                <label id="email-label" for="email">Email: </label>
+                <input id="email" name="email" type="text"/>
+            </div>
+                
+            <div>
+                <label id="phone-label" for="phone">Phone: </label>
+                <input id="phone" name="phone" type="text"/>
+            </div>
+                
+            <div>
+                <label id="reason-label" for="reason">Reason for Inquiry: </label>
+                <select name="reason">
+                    <option value="Select a Reason">Catering</option>
+                    <option value="Software Support">Private Party</option>
+                    <option value="Hardware Support">Feedback</option>
+                    <option value="Information Request">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label id="customer-visit" for="visit">Have you been to the restaurant:</label>
+                <input name="visit" value="No" type="radio" checked/>No
+                <input name="visit" value="Yes" type="radio"/>Yes
+            </div>
+            
+            <div>
+                <label id="add-info-label" for="additional-info">Best days to contact you:</label>
+                <input id="days" name="days" value="Monday" type="checkbox"/>M
+                <input id="days" name="days" value="Tuesday" type="checkbox"/>T
+                <input id="days" name="days" value="Wednesday" type="checkbox"/>W
+                <input id="days" name="days" value="Thursday" type="checkbox"/>Th
+                <input id="days" name="days" value="Friday" type="checkbox"/>F
+            </div>
+            
+            <div>
+                <input id="btn-submit" type="submit" value="Send Request"/>
+            </div>
+        </form>
+
+
+        <!-- Footer -->
+        <footer>
+            <hr />
+            <div>
+                <p>Street, City, State, Zipcode</p>
+                <p>Telephone Number</p>
+            </div>
+            <hr />
+        </footer>
+    </body>
+</html>
