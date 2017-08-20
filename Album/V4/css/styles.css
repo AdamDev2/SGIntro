@@ -1,0 +1,17 @@
+* {
+    margin: 10px 10px;
+}
+h1, h2, h3, table {
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+#album-info {
+    background-image: url("../images/Aerosmith_A_Little_South_Of_Sanity.JPG");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: 300px;
+}
+li {
+    font-style: italic;
+}
