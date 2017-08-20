@@ -1,0 +1,19 @@
+* {
+    margin: 10px 10px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Shadows Into Light', cursive;
+}
+#page-title {
+    color: darksalmon;
+    text-align: center;
+}
+footer {
+    clear: both;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0px; 
+}
+p {
+    text-align: center;
+}
