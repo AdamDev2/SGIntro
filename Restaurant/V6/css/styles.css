@@ -1,17 +1,33 @@
+*{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    
+}
+#wrap {
+    min-height: 100%;
+    padding-bottom: 80px;
+}
 #page-title, .page-header {
     color: darksalmon;
     text-align: center;
 }
-footer {
-    clear: both;
-    position: relative;
-    left: 10px;
-    right: 10px;
-    bottom: 0px; 
-}
-p {
+
+p, h2 {
     text-align: center;
+    vertical-align: center;
 }
+
+
+/* Navigation CSS */
 a {
     text-decoration: none;
 }
@@ -22,16 +38,61 @@ a:hover {
 a:visited {
     color: lightcoral;
 }
+
+
+/* Home Page CSS */
+.carousel .item img {
+    max-height: 768px;
+    min-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu Page CSS */
+caption {
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 30px;
+}
 table {
     width: 30%;
     margin-left: 5%;
     margin-bottom: 20px;
+    font-size: 18px;
 }
-caption {
-    text-align: left;
-    text-decoration: underline;
+
+
+
+/* Contact Us Page CSS */
+label {
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+    padding-right: 10px;
     font-weight: bold;
 }
-.beverage-table {
-    clear: both;
+#btn-submit {
+    margin-left: 55%;
+}
+#name,
+#email,
+#phone,
+select {
+    width: 190px;
+}
+#contactus {
+    margin-top: 50px;
+}
+
+
+/* Footer CSS */
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: silver;
+    text-align: center;
 }

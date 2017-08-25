@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <style>
-            h2 {
-               text-align: center;
-            }
-            label {
-               display: inline-block;
-               text-align: right;
-               width: 45%;
-               padding-right: 10px;
-               font-weight: bold;
-            }
-            #btn-submit {
-                margin-left: 55%;
-            }
-            #name, #email, #phone {
-               width: 186px;
-            }
-            select {
-               width: 190px;
-            }
-            #contactus {
-                margin-top: 50px;
-                
-            }
-            </style>
-    </head>
-    <body>
+
+<head>
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ubuntu" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrap">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -39,7 +19,7 @@
                         <h1>BURGER TIME</h1>
                     </div>
                     <hr/>
-            
+
                     <!-- Navigation -->
                     <div id=navigation>
                         <ul class="nav nav-pills">
@@ -52,28 +32,28 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <!-- Form -->
                     <form id="contactus" action="#" method="post">
-                            
+
                         <div>
                             <label id="name-label" for="name">Name: </label>
-                            <input id="name" name="name" type="text"/>
+                            <input id="name" name="name" type="text" />
                         </div>
-                            
+
                         <div>
                             <label id="email-label" for="email">Email: </label>
-                            <input id="email" name="email" type="text"/>
+                            <input id="email" name="email" type="text" />
                         </div>
-                            
+
                         <div>
                             <label id="phone-label" for="phone">Phone: </label>
-                            <input id="phone" name="phone" type="text"/>
+                            <input id="phone" name="phone" type="text" />
                         </div>
-                            
+
                         <div>
                             <label id="reason-label" for="reason">Reason for Inquiry: </label>
                             <select name="reason">
@@ -87,36 +67,43 @@
                         <div>
                             <label id="customer-visit" for="visit">Have you been to the restaurant:</label>
                             <input name="visit" value="No" type="radio" checked/>No
-                            <input name="visit" value="Yes" type="radio"/>Yes
+                            <input name="visit" value="Yes" type="radio" />Yes
                         </div>
-                        
+
                         <div>
                             <label id="add-info-label" for="additional-info">Best days to contact you:</label>
-                            <input id="days" name="days" value="Monday" type="checkbox"/>M
-                            <input id="days" name="days" value="Tuesday" type="checkbox"/>T
-                            <input id="days" name="days" value="Wednesday" type="checkbox"/>W
-                            <input id="days" name="days" value="Thursday" type="checkbox"/>Th
-                            <input id="days" name="days" value="Friday" type="checkbox"/>F
+                            <input id="days" name="days" value="Monday" type="checkbox" />M
+                            <input id="days" name="days" value="Tuesday" type="checkbox" />T
+                            <input id="days" name="days" value="Wednesday" type="checkbox" />W
+                            <input id="days" name="days" value="Thursday" type="checkbox" />Th
+                            <input id="days" name="days" value="Friday" type="checkbox" />F
                         </div>
-                        
+
                         <div>
-                            <input id="btn-submit" type="submit" value="Send Request"/>
+                            <input id="btn-submit" type="submit" value="Send Request" />
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Footer -->
-                    <footer>
-                        <hr />
-                        <p>Street, City, State, Zipcode</p>
-                        <p>Telephone Number</p>   
-                        <hr />
-                    </footer>
-                </div>
-            </div>
         </div>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    </body>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>12000 SG Street, Los Angeles, CA, 90094</p>
+            <p>(555) 555-5555</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
